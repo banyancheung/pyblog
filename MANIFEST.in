@@ -1,0 +1,6 @@
+include LICENSE
+include pylog/schema.sql
+graft pylog/static
+graft pylog/templates
+graft tests
+global-exclude *.pyc

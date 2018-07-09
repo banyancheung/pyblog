@@ -1,0 +1,11 @@
+.gitginore
+.idea/
+instance/
+venv
+*.pyc
+.cache/
+__pycache__/
+.pytest_cache/
+dist/
+build/
+.coverage
