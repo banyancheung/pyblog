@@ -1,21 +1,14 @@
-from setuptools import find_packages, setup
+from flask import d
+from flask_script import Manager
+from pylog import create_app
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+app = create_app()
+manager = Manager(app)
 
-setup(
-    name='pylog',
-    version='1.0.0',
-    author='banyan cheung',
-    author_email='i@zhangrong.cc',
-    description="pylog is simple blog written by python",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/banyancheung/pyblog",
-    packages=find_packages,
-    include_package_data=True,
-    zip_safe=False,
-    install_requires=[
-        'flask', 'Flask-WTF', 'Flask-Script', 'PyMySQL'
-    ],
-)
+@manager.command
+def deploy():
+    pass
+
+
+if __name__ == '__main__':
+    manager.run()

@@ -16,6 +16,7 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'flask', 'Flask-WTF', 'Flask-Script', 'PyMySQL'
+        'flask', 'Flask-WTF', 'Flask-Script', 'PyMySQL', 'SQLAlchemy',
+        'Flask-SQLAlchemy'
     ],
 )
