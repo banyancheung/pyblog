@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title></title>
+        <style>
+            .footer {
+                background: none repeat scroll 0 0 white;
+                border-top: 1px solid #e7eaec;
+                bottom: 0;
+                left: 0;
+                padding: 10px 20px;
+                position: absolute;
+                right: 0;
+            }
+            .pull-right {
+                float: right!important;
+            }
+        </style>
+        <link rel="stylesheet" href="/static/css/app.css">
+    </head>
+    <body>
+        <header class="full-container">
+            <div class="wrapper">
+                <h1>
+                    <img src="/static/images/logo.png" alt="">
+                </h1>
+            </div>
+        </header>
+        <?= $content ?>
+        <div class="footer">
+            <div class="pull-right">
+                <strong>Copyright</strong> © 深圳市博思协创网络科技有限公司 <a target="_blank" href="http://www.miitbeian.gov.cn">粤ICP备14082021号</a>
+            </div>
+        </div>
+    </body>
+</html>
